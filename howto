@@ -1,0 +1,11 @@
+#Start spark shell
+/bin/pyspark --num-executors 1 --executor-memory 512m --master yarn-client
+#inside shell run:
+execfile("/home/maria_dev/sparkprocess.py")
+
+
+
+#Delete hdfs results folder
+cd ~/
+hdfs dfs -rm -r /user/maria_dev/Results/*
+
