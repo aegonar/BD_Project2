@@ -21,7 +21,7 @@ now = dateutil.parser.parse('2018-12-08T08:00:00.000000Z')
 upto = dateutil.parser.parse('2018-12-08T08:59:00.000000Z')
 
 for dt in rrule.rrule(rrule.HOURLY, dtstart=now, until=upto):
-	range = now + timedelta(hours=1)
+	range = df + timedelta(hours=1)
 	print dt," to ",range
 	
 
